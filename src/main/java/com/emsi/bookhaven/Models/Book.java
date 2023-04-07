@@ -24,11 +24,16 @@ public class Book {
     @Column(columnDefinition = "TEXT")
     private String summary;
 
-    public Book(String title, String author, int length, String genre, String summary) {
+    private int price;
+    private int quantity;
+
+    public Book(String title, String author, int length, String genre, String summary, int price, int quantity) {
         this.title = title;
         this.author = author;
         this.length = length;
         this.genre = genre;
         this.summary = summary;
+        this.price = price;
+        this.quantity = quantity;
     }
 }

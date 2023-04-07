@@ -43,13 +43,15 @@ public class AddBookServlet extends HttpServlet {
         int length = Integer.parseInt(request.getParameter("length"));
         String genre = request.getParameter("genre");
         String summary = request.getParameter("summary");
+        int quantity = Integer.parseInt(request.getParameter("quantity"));
+        int price = Integer.parseInt(request.getParameter("price"));
         //////
 
         ///SAVING THE BOOK O THE DATABASE
         try{
-            Book book = new Book(title,author,length,genre,summary);
+            Book book = new Book(title,author,length,genre,summary,price,quantity);
             bookDAO.createBook(book);
-            response.sendRedirect("index.jsp");
+            response.sendRedirect("/booklist");
         }
         catch (Exception ex)
         {

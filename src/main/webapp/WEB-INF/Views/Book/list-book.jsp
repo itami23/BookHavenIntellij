@@ -26,6 +26,8 @@
             <th>Length</th>
             <th>Genre</th>
             <th>Summary</th>
+            <th>Price</th>
+            <th>Quantity</th>
         </tr>
         </thead>
         <tbody>
@@ -36,6 +38,8 @@
             <td><%= book.getLength() %></td>
             <td><%= book.getGenre() %></td>
             <td><%= book.getSummary() %></td>
+            <td><%= book.getPrice() %></td>
+            <td><%= book.getQuantity() %></td>
         </tr>
         <% } %>
         </tbody>

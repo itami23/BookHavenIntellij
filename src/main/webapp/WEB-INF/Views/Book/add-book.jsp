@@ -42,6 +42,14 @@
       <label for="length">length:</label>
       <input type="number" class="form-control" id="length" name="length" step="0.01" min="0" required>
     </div>
+    <div class="form-group">
+      <label for="price">price:</label>
+      <input type="number" class="form-control" id="price" name="price" step="0.01" min="0" required>
+    </div>
+    <div class="form-group">
+      <label for="quantity">quantity:</label>
+      <input type="number" class="form-control" id="quantity" name="quantity" step="0.01" min="0" required>
+    </div>
     <button type="submit" class="btn btn-primary">Create</button>
   </form>
 </div>
