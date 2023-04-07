@@ -23,4 +23,12 @@ public class Book {
 
     @Column(columnDefinition = "TEXT")
     private String summary;
+
+    public Book(String title, String author, int length, String genre, String summary) {
+        this.title = title;
+        this.author = author;
+        this.length = length;
+        this.genre = genre;
+        this.summary = summary;
+    }
 }
