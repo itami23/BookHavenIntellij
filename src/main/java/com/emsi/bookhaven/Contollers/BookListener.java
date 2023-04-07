@@ -1,4 +1,4 @@
-package com.emsi.bookhaven.Contollers.BookControllers;
+package com.emsi.bookhaven.Contollers;
 
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
