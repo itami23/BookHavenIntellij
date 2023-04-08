@@ -40,6 +40,7 @@
             <td><%= book.getSummary() %></td>
             <td><%= book.getPrice() %></td>
             <td><%= book.getQuantity() %></td>
+            <td> <a class="btn btn-warning" href="updatebook?book_id=<%= book.getId()%>">Update</a></td>
         </tr>
         <% } %>
         </tbody>

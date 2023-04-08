@@ -27,4 +27,17 @@ public class BookDAO {
         TypedQuery<Book> query = entityManager.createQuery("SELECT b FROM Book b", Book.class);
         return query.getResultList();
     }
+
+    public Book findBook(Long book_id)
+    {
+        Book book = entityManager.find(Book.class,book_id);
+        return book;
+    }
+
+    public void updateBook(Book book)
+    {
+        entityManager.getTransaction().begin();
+        entityManager.merge(book);
+        entityManager.getTransaction().commit();
+    }
 }
